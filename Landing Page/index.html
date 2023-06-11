@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    
+    <!---------------------style.css----------------->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Landing Page</title>
+  </head>
+  <body>
+  <header>
+<!-------------Navbar------------->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light px-4  text-center fixed-top ">
+  <div class="container-fluid">
+  <!----------nav tag----------------->
+   <h1> <a class="navbar-brand fs-1" href="#" style="color: brown;">
+    Studio<span class="text-secondary">Kelly</span></a></h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+        <!-------------home nav-------------->
+
+        <li class="nav-item">
+          <a class="nav-link active mx-2" style="color: brown;" id="home" aria-current="page" 
+          href="#" onclick="change1(this);">Home</a>
+        </li>
+        <!-------------------about nav--------->
+
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="#about">About Me</a>
+        </li>
+        <!---------------Book nav---------------->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#Book Online" id="navbarDropdown" role="button" 
+          data-bs-toggle="dropdown" aria-expanded="false">Book Online
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#Book Online">Couple Collection</a></li>
+            <li><a class="dropdown-item" href="#Book Online">Wedding Collection</a></li>
+            <li><a class="dropdown-item" href="#Book Online">Prewedding Collection</a></li>
+          </ul>
+        </li>
+        <!-------------------contact nav---------->
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="#contact">Contact</a>
+        </li>
+      </ul> 
+    </div>
+  </div>
+</nav>
+ 
+<!--------------carousel----------------------------->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/s17.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>capture life.beauty. love.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vel quo unde praesentium 
+          itaque sit, quas facere magnam!</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/s.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>capture life. beauty. love. </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vel quo unde praesentium 
+          itaque sit, quas facere magnam! </p>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</header>
+
+<!--------------About Me------------------------->
+
+<section class="About mt-5" id="about">
+  <div class="container">
+         <div class="text-center">
+               <h1 data-aos="fade-right" data-aos="offset" data-aos-offset="200"> 
+                <span style="color: brown;">About</span> Me</h1>
+               <hr class="w-25 m-auto">
+         </div>
+         <div class="row">
+           <div class="col-sm-12 col-md-6 col-lg-6 col-12 my-5">
+
+           <h1><span style="color: brown;">What do you</span> want to know?</h1>
+           
+           <p class="p-2">
+
+            I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
+            Just click “Edit Text” or double click me to add your own content and make 
+            changes to the font. Feel free to drag and drop me anywhere you like on your page. 
+            I’m a great place for you to tell a story and let your users know a little more about you.<br><br>
+
+            This is a great space to write long text about your company and your services. 
+            You can use this space to go into a little more detail about your company.<br><br>
+
+            Talk about your team and what services you provide. Tell your visitors 
+            the story of how you came up with the idea for your business and what makes you 
+            different from your competitors. Make your company stand out and show your visitors who you are.
+           </p>
+      <button type="button" class="btn btn-outline-danger mb-5">More about me</button>
+     
+      <!------------------about me img---------------------->
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12 my-5 text-center">
+          <img src="img/p10.jpg" class="img-fluid img-thumbnail"/>
+          </div>
+   </div>
+</section>
+
+<!---------------------Book Online------------------------------>
+
+<section class="Book Online mt-5" id="Book Online">
+  <div class="container">
+         <div class="text-center mb-5">
+               <h1 data-aos="fade-right" data-aos="offset" data-aos-offset="200"> 
+                <span style="color: brown;">Book</span> Online</h1>
+               <hr class="w-25 m-auto">
+         </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/s13.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Couple Collection</h5><br>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to 
+          additional content. This content is a little bit longer.
+        </p>
+          <a href="#" class="btn  btn-danger text-light">Let's Talk</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/s14.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">Wedding Collection</h5><br>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to 
+          additional content. This content is a little bit longer.</p>
+        <a href="#" class="btn  btn-danger text-light">Let's Talk</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/s15.jpg" class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">PreWedding Collection</h5><br>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to 
+          additional content. This content is a little bit longer.
+        </p>
+        <a href="#" class="btn  btn-danger text-light">Let's Talk</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+
+<!--------------------Contact us-------------------------------->
+
+<section class="contact py-5 bg-light" id="contact">
+  <div class="container">
+         <div class="text-center mb-5">
+               <h1 data-aos="fade-right" data-aos="offset" data-aos-offset="200"> 
+                <span style="color: brown;">Feel free </span>to Contact</h1>
+               <hr class="w-50 m-auto">
+         </div>
+           <div class="row g-4">
+
+           <div class="col-sm-12 col-md-6 col-lg-6 col-12 my-5">
+
+    <form class="row g-3">
+  <div class="col-12">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+
+  
+  <div class="col-md-2">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+
+  <div class="col-12">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <button type="submit" class="btn btn-danger text-light">Sign in</button>
+  </div>
+</form>
+
+<!-------------google map----------------->
+
+  </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-12 my-5 p-4  text-center ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.9689632112613!2d74.20251696469275!3d16.67843648850707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1aab3b4ae632b%3A0x6af29edd37a7c2ad!2sSaneguruji%20Vasahat%2C%20Kanerkar%20Nagar%2C%20Kolhapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1628571188272!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+</div>
+</section>
+
+<!----------footer---------------->
+<div class="container-fluid bg-danger text-white text-center py-2 fs-6"> &#169; 2023 Copyright: developed by  <a href="#"
+class="text-white">Anushka Raut</a>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            AOS.init();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <div class="temperature-converter">
+        <!-------heading---------->
+        <div class="logo">
+        <h1>Temperature <span style="color: #1614ad">Converter</span></h1>
+        &nbsp;&nbsp;&nbsp;<img src="img/thermometer.png" alt="" height="80px"; width="80px";>
+        </div>
+        
+        <!-----result------------>
+        <div class="result">
+            <span class="result-heading">Result</span>
+            <h2 class="celsius-value" id="celsius"></h2>
+        </div>
+
+        <!--------degree and fahreenheit---------->
+        <div class="degree-type">
+            <div class="degree-field">
+              <label for="degree" class="degree">Degrees</label>
+              <input type="number" name="degree" id="degree" />
+            </div>
+
+            <div class="temp-field">
+              <label for="temp-type" class="type">Type</label>
+              <select name="temperatures" id="temp-type" autocomplete="on">
+                <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+                <option id="kelvin" value="kelvin">Kelvin</option>
+              </select>
+            </div>
+          </div>
+          <!---------convert button------->
+          <button id="convert-btn">Convert</button>
+        </div>
+      </div>
+    </div>
+    </body>
+    <!----------javascript---------->
+    <script src="index.js"></script>
+</body>
+</html>
